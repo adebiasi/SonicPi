@@ -105,6 +105,32 @@ loop do
   end
 end
 ```
+
+### Play a shifting minor/major chord with a guitar style arpeggio (using play_pattern_timed)
+```ruby
+notes = ring(:c5, :g4, :a4, :f4)
+chord_type = ring(:M, :M, :m, :M)
+
+loop do
+  my_chord = chord(notes.tick, chord_type.look)
+  duration = 4.0
+  play my_chord, release: duration
+  pattern = chord(notes.look, chord_type.look, num_octaves: 2).take(4).reflect.butlast.repeat(4)
+  play_pattern_timed(pattern,duration/pattern.length)
+end
+```
+
+### Play a shifting minor/major chord with a guitar style arpeggio (using play_pattern_timed and chord_degree)
+```ruby
+loop do
+  duration = 4.0
+  my_chord = chord_degree([8,5,6,4].tick, :c4, :major, 3)
+  play my_chord, release: duration
+  pattern = (my_chord+my_chord.map{|n| n+12}).take(4).reflect.butlast.repeat(4)
+  play_pattern_timed(pattern,duration/pattern.length)
+end
+```
+
 ## Play options
 
 ### Change amp, same for sample
