@@ -2,7 +2,9 @@
 
 This repo contains some basic examples to practice with SonicPi.
 
-Some basic exercises:
+# Guitar chords generator
+
+# Basic exercises
 
 ## Notes and chords
 
