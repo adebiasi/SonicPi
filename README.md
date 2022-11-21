@@ -2,7 +2,14 @@
 
 This repo contains some code to practice with SonicPi.
 
-# Guitar chords generator
+# Guitar BackingTrack Generator
+
+# Drum Beats
+
+Drum beats samples taken from the following references:
+<br><br>
+<img src="https://github.com/adebiasi/SonicPi/blob/main/DrumBeats/References/Beats.jpg" alt="drawing" height="400"/>
+<img src="https://github.com/adebiasi/SonicPi/blob/main/DrumBeats/References/ClassicBreakBeats.jpg" alt="drawing" height="400"/>
 
 # Basic exercises
 
