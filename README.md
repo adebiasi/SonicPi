@@ -1,6 +1,6 @@
 # SonicPi
 
-This repo contains some basic examples to practice with SonicPi.
+This repo contains some code to practice with SonicPi.
 
 # Guitar chords generator
 
